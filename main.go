@@ -19,7 +19,8 @@ func main() {
 func index(c *gin.Context) {
 	data := map[string]string{
 		"name": "Eason",
-		"test":"test"
+		"test":"test",
+		"branch":"1227"
 	}
 	c.HTML(200, "header.html", map[string]string{})
 	c.HTML(200, "index.html", data)
